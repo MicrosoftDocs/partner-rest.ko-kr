@@ -4,7 +4,7 @@
       "docset_name": "partner-rest",
       "build_source_folder": "partner-rest",
       "build_output_subfolder": "partner-rest",
-      "locale": "ko-KR",
+      "locale": "ko-kr",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
@@ -21,10 +21,9 @@
   "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live-sxs",
-    "master-sxs"
+    "live",
+    "master"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/partner-rest",
-  "git_repository_branch_open_to_public_contributors": "docs",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
@@ -32,7 +31,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ko-KR",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ko-kr",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -54,15 +53,19 @@
   ],
   "branch_target_mapping": {
     "live": [
-      "Publish",
-      "Pdf"
+      "Publish"
+    ],
+    "live-sxs": [
+      "Publish"
     ],
     "master": [
-      "Publish",
-      "Pdf"
-    ]
+      "Publish"
+    ],
+    "master-sxs": [
+      "Publish"
+    ],
   },
-  "need_generate_pdf_url_template": true,
+  "need_generate_pdf_url_template": false,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
