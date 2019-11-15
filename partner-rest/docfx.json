@@ -35,6 +35,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "disable_contribution_on_translation_quality": ["MT"],
       "breadcrumb_path": "/partner/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
