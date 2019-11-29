@@ -1,0 +1,40 @@
+- name: 파트너 개발자 설명서
+  href: index.md
+  items:
+    - name: 개요 및 시나리오
+      href: develop/index.md
+      items:
+        - name: 시작
+          href: develop/get-started.md
+          items:
+            - name: 파트너 API 인증
+              href: develop/api-authentication.md
+        - name: 시나리오
+          href: develop/scenarios.md
+          items:
+            - name: 조회
+              href: develop/referrals.md
+              items:
+                - name: 조회 만들기
+                  href: develop/create-a-referral.md
+                - name: 조회 목록 가져오기
+                  href: develop/get-a-list-of-referrals.md
+                - name: ID로 조회 가져오기
+                  href: develop/get-a-referral-by-id.md
+                - name: 조회 업데이트
+                  href: develop/update-a-referral.md
+                - name: 조회 커넥터
+                  href: develop/referral-connectors.md
+                - name: 조회 리소스
+                  href: develop/referral-resources.md
+    - name: REST API 참조
+      href: develop/rest-api-reference.md
+      items:
+        - name: REST 엔드포인트 URL
+          href: develop/rest-urls.md
+        - name: REST 헤더
+          href: develop/headers.md
+        - name: REST 오류 코드
+          href: develop/error-codes.md
+        - name: REST 리소스
+          href: develop/rest-resources.md
