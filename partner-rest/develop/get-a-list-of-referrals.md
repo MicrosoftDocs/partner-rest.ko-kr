@@ -6,10 +6,10 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
 ms.openlocfilehash: 7daa7a1989a5832f58d555b1f8bb3d7681024dba
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/07/2020
 ms.locfileid: "74556533"
 ---
 # <a name="get-a-list-of-referrals"></a>조회 목록 가져오기
@@ -20,7 +20,7 @@ ms.locfileid: "74556533"
 
 이 항목에서는 조회 목록을 가져오는 방법을 설명합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
 - 자격 증명은 [파트너 API 인증](api-authentication.md)에 설명되어 있습니다. 이 시나리오는 앱+사용자 자격 증명을 통한 인증을 지원합니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "74556533"
 
 #### <a name="supported-odata-operations"></a>지원되는 OData 작업
 
-| 이름     | 설명            | 예                                                                    |
+| 이름     | 설명            | 예제                                                                    |
 |:---------|:-----------------------|:---------------------------------------------------------------------------|
 | $filter  | 결과 필터링(행) |`/referrals?$filter=engagementId eq '65edc0b5-3485-41b7-a17e-dfa9ef4706e2'` |
 | $orderby | 결과 정렬         |`/referrals?$orderby=createdDateTime desc`                                  |
@@ -45,11 +45,11 @@ ms.locfileid: "74556533"
 
 | 이름         | 형식   | 필수 | 설명                                                                             |
 |--------------|--------|----------|-----------------------------------------------------------------------------------------|
-| engagementId | 문자열 | 아니오       | Engagement ID                                                                       |
-| status       | 문자열 | 아니오       | [ReferralStatus](referral-resources.md#referralstatus)를 나타내는 문자열       |
-| substatus    | 문자열 | 아니오       | [ReferralSubstatus](referral-resources.md#referralsubstatus)를 나타내는 문자열 |
-| updatedDateTime     | 문자열 | 아니오       | 조회의 UpdatedDatetime |
-| 전자 메일     | 문자열 | 아니오       | 조회의 팀 연락처 이메일 |
+| engagementId | string | 아니요       | Engagement ID                                                                       |
+| 상태       | string | 아니요       | [ReferralStatus](referral-resources.md#referralstatus)를 나타내는 문자열       |
+| substatus    | string | 아니요       | [ReferralSubstatus](referral-resources.md#referralsubstatus)를 나타내는 문자열 |
+| updatedDateTime     | string | 아니요       | 조회의 UpdatedDatetime |
+| 전자 메일     | string | 아니요       | 조회의 팀 연락처 이메일 |
 
 #### <a name="supported-orderby-parameters"></a>지원되는 orderby 매개 변수
 
@@ -59,13 +59,13 @@ ms.locfileid: "74556533"
 |----------------|----------|----------|------------------------------------|
 |createdDateTime | DateTime | 예      | 조회를 만든 날짜와 시간 |
 
-### <a name="request-headers"></a>요청 헤더
+### <a name="request-headers"></a>요청 헤더입니다.
 
 - 자세한 내용은 [파트너 REST 헤더](headers.md)를 참조하세요.
 
 ### <a name="request-body"></a>요청 본문
 
-없음.
+None.
 
 ### <a name="request-example"></a>요청 예제
 

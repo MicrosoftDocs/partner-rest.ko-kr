@@ -6,10 +6,10 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
 ms.openlocfilehash: 2fbab9020d3028a7416585fd7249cab02610e5eb
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/07/2020
 ms.locfileid: "74556633"
 ---
 # <a name="partner-rest-resources"></a>파트너 REST 리소스
@@ -26,7 +26,7 @@ ms.locfileid: "74556633"
 * ReferralQualification
 * CustomerProfile
 * CustomerProfileType
-* 주소
+* Address
 * 멤버
 * ContactPreference
 * Consent
@@ -40,5 +40,5 @@ ms.locfileid: "74556633"
 * 제품
 * 서비스
 * 산업
-* 해결 방법
+* 솔루션
 * 고객 규모

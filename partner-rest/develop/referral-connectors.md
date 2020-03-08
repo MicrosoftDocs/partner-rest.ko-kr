@@ -5,24 +5,24 @@ ms.date: 07/22/2019
 ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
-ms.openlocfilehash: e1197b00202bcf299579a285208026bffe3ab12c
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.openlocfilehash: 995d0932da9cd28407babfdc54e695caac9882d5
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556653"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "76542028"
 ---
 # <a name="referral-connectors"></a>조회 커넥터
 
 조회 커넥터를 사용하여 파트너 조회를 CRM(고객 관계 관리) 잠재 고객과 동기화할 수 있습니다. [Microsoft Flow](https://flow.microsoft.com)를 파트너 조회를 수신하는 HTTPS 엔드포인트로 사용하여 조회 커넥터를 만들 수 있습니다. 그런 다음, Flow에서 받은 조회를 CRM 시스템에 잠재 고객으로 쓸 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
 * Microsoft Flow 구독
   * 이 구독에 대한 관리자 액세스 권한이 있는 계정
 * Azure AD(Azure Active Directory) 애플리케이션 ID, 사용자 ID, 암호 및 테넌트 ID(파트너 API에 액세스하는 데 사용됨). 설치 지침은 [파트너 인증](api-authentication.md)을 참조하세요.
-* [Azure 함수 앱](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal) 구독
-* [조회 생성](https://docs.microsoft.com/en-us/partner-center/develop/partner-center-webhook-events#referral-created-event) 및 [조회 업데이트](https://docs.microsoft.com/en-us/partner-center/develop/partner-center-webhook-events#referral-updated-event) 이벤트에 대한 [파트너 센터 웹후크 이벤트](https://docs.microsoft.com/en-us/partner-center/develop/partner-center-webhook-events)
+* [Azure 함수 앱](https://docs.microsoft.com/azure/azure-functions/functions-create-function-app-portal) 구독
+* [조회 생성](https://docs.microsoft.com/partner-center/develop/partner-center-webhook-events) 및 [조회 업데이트](https://docs.microsoft.com/partner-center/develop/partner-center-webhook-events#referral-created-event) 이벤트에 대한 [파트너 센터 웹후크 이벤트](https://docs.microsoft.com/partner-center/develop/partner-center-webhook-events#referral-updated-event)
 * [Microsoft Dynamics 365](https://dynamics.microsoft.com) 구독
   * 판매 모듈 사용
   * 이 구독에 대한 관리자 액세스 권한이 있는 계정
@@ -63,9 +63,9 @@ ms.locfileid: "74556653"
 
 ### <a name="import-flow-synchronization-package"></a>흐름 동기화 패키지 가져오기
 
-샘플 코드 패키지를 다운로드하여 Microsoft Flow로 가져와서 Dynamics 365에 연결합니다. 
+샘플 코드 패키지를 다운로드하여 Microsoft Flow로 가져와서 Dynamics 365에 연결합니다.
 
-1. [GitHub 리포지토리](https://github.com/microsoft/Partner-Center-Referrals)에서 [흐름 동기화 패키지](https://github.com/microsoft/Partner-Center-Referrals/blob/master/flowconnectors/MicrosoftDynamicsCRM/PartnerReferralsToDynamicsCRMLead.zip?raw=true)를 다운로드합니다.
+1. [GitHub 리포지토리](https://github.com/microsoft/Partner-Center-Referrals/blob/master/flowconnectors/MicrosoftDynamicsCRM/PartnerReferralsToDynamicsCRMLead.zip?raw=true)에서 [흐름 동기화 패키지](https://github.com/microsoft/Partner-Center-Referrals)를 다운로드합니다.
 2. 적절한 자격 증명을 사용하여 [Microsoft Flow](https://flow.microsoft.com)에 로그인합니다.
 3. 탐색 메뉴에서 **내 흐름**을 선택합니다. 그런 다음, **가져오기**를 선택합니다.
 4. **패키지 가져오기** 페이지에서 다운로드한 흐름 동기화 패키지를 선택합니다. 그런 다음, **업로드**를 선택합니다.
@@ -115,7 +115,7 @@ ms.locfileid: "74556653"
 > [!TIP]
 > 예제는 다음 섹션에서 [샘플 함수 앱 코드](#sample-function-app-code)를 참조하세요.
 
-1. [파트너 센터에서 콜백 이벤트를 인증](https://docs.microsoft.com/en-us/partner-center/develop/partner-center-webhooks#how-to-authenticate-the-callback)하는 [Azure 함수 앱을 만듭니다](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal).
+1. [파트너 센터에서 콜백 이벤트를 인증](https://docs.microsoft.com/azure/azure-functions/functions-create-function-app-portal)하는 [Azure 함수 앱을 만듭니다](https://docs.microsoft.com/partner-center/develop/partner-center-webhooks#how-to-authenticate-the-callback).
 
     1. 필요한 헤더(**Authorization**, **x-ms-certificate-url**, **x-ms-signature-algorithm**)가 있는지 확인합니다.
     2. 콘텐츠를 서명하는 데 사용된 인증서(**x-ms-certificate-url**)를 다운로드합니다.
@@ -123,7 +123,7 @@ ms.locfileid: "74556653"
     4. 인증서의 **조직**을 확인합니다.
     5. UTF-8 인코딩 콘텐츠를 버퍼로 읽습니다.
     6. RSA 암호화 공급자를 만듭니다.
-    7. [서명이 지정된 해시 알고리즘(예 : SHA256)으로 서명된 것과 일치](https://docs.microsoft.com/en-us/partner-center/develop/partner-center-webhooks#example-for-signature-validation)하는지 확인합니다.
+    7. [서명이 지정된 해시 알고리즘(예 : SHA256)으로 서명된 것과 일치](https://docs.microsoft.com/partner-center/develop/partner-center-webhooks#example-for-signature-validation)하는지 확인합니다.
     8. 확인이 성공하면 **OK** 메시지가 반환됩니다.
 
 2. 함수 앱의 HTTP 엔드포인트에 대해 생성된 콜백 URI를 확인합니다. 이 URI는 함수 앱을 만들 때 표시됩니다. 함수 앱의 Azure 리소스 페이지에서 이 URI를 찾을 수도 있습니다.
@@ -211,7 +211,7 @@ private static string GetFirstValueFromHeader(HttpRequest request, string header
 2. 만들거나 업데이트한 흐름을 선택합니다.
 3. 흐름 페이지에서 **흐름 편집**을 선택합니다.
 4. 흐름의 **HTTP POST URL**을 복사하여 저장합니다. 이 URL은 흐름을 트리거하는 데 사용해야 합니다.
-5. 조회가 생성되거나 업데이트될 때 [웹후크 이벤트를 수신하도록 등록](https://docs.microsoft.com/en-us/partner-center/develop/partner-center-webhooks#register-to-receive-events)합니다. 다음 본문 형식을 사용합니다.
+5. 조회가 생성되거나 업데이트될 때 [웹후크 이벤트를 수신하도록 등록](https://docs.microsoft.com/partner-center/develop/partner-center-webhooks#register-to-receive-events)합니다. 다음 본문 형식을 사용합니다.
 
 ```json
 {

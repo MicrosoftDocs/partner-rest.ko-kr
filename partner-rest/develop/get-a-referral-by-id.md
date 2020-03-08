@@ -1,18 +1,18 @@
 ---
-title: ID별 조회 가져오기
+title: ID로 조회 가져오기
 description: 해당 ID별 조회를 가져옵니다.
 ms.date: 05/21/2019
 ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
 ms.openlocfilehash: 3639a5885b13953d57fc5cc86ad1abd3dc0d3614
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/07/2020
 ms.locfileid: "74556503"
 ---
-# <a name="get-a-referral-by-id"></a>ID별 조회 가져오기
+# <a name="get-a-referral-by-id"></a>ID로 조회 가져오기
 
 적용 대상:
 
@@ -20,7 +20,7 @@ ms.locfileid: "74556503"
 
 이 항목에서는 ID를 기준으로 조회를 가져오는 방법을 설명합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
 - 자격 증명은 [파트너 API 인증](api-authentication.md)에 설명되어 있습니다. 이 시나리오는 앱+사용자 자격 증명을 통한 인증을 지원합니다.
 
@@ -38,9 +38,9 @@ URL에 다음 ID를 사용합니다.
 
 | 이름                   | 형식     | 필수 | 설명                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|Id                      | 문자열   | 예       | 조회 ID       |
+|Id                      | string   | 예       | 조회 ID       |
 
-### <a name="request-headers"></a>요청 헤더
+### <a name="request-headers"></a>요청 헤더입니다.
 
 - 자세한 내용은 [파트너 REST 헤더](headers.md)를 참조하세요.
 

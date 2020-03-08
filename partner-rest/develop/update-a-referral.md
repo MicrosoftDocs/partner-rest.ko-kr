@@ -6,10 +6,10 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.localizationpriority: medium
 ms.openlocfilehash: cae08ddffc7fd97682a009a430b4cd1114f8e761
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
-ms.translationtype: HT
+ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/07/2020
 ms.locfileid: "74556773"
 ---
 # <a name="update-a-referral"></a>조회 업데이트
@@ -20,7 +20,7 @@ ms.locfileid: "74556773"
 
 이 항목에서는 조회를 업데이트하는 방법을 설명합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
 - 자격 증명은 [파트너 API 인증](api-authentication.md)에 설명되어 있습니다. 이 시나리오는 앱+사용자 자격 증명을 통한 인증을 지원합니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "74556773"
 |---------|-------------------------------------------------------------------|
 | **PUT** | <https://api.partner.microsoft.com/v1.0/engagements/referrals/{Id}> |
 
-### <a name="request-headers"></a>요청 헤더
+### <a name="request-headers"></a>요청 헤더입니다.
 
 - 자세한 내용은 [파트너 API REST 헤더](headers.md)를 참조하세요.
 
@@ -45,16 +45,16 @@ ms.locfileid: "74556773"
 
 | 속성            | 형식                                                                 | 설명                                                                                                          |
 |---------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Id                  | 문자열                                                               | 이 조회의 ID입니다.                                                                                            |
-| EngagementId        | 문자열                                                               | 이 조회의 EngagementID입니다. 단일 EngagementID에 여러 조회를 연결할 수 있습니다.                    |
-| 이름                | 문자열                                                               | 조회의 이름입니다.                                                                                            |
-| ExternalReferenceId | 문자열                                                               | 조회에 대한 외부 식별자입니다. 예제: 사용자의 Dynamics 365 잠재 고객/기회 ID를 저장합니다.                    |
+| Id                  | string                                                               | 이 조회의 ID입니다.                                                                                            |
+| EngagementId        | string                                                               | 이 조회의 EngagementID입니다. 단일 EngagementID에 여러 조회를 연결할 수 있습니다.                    |
+| 이름                | string                                                               | 조회의 이름입니다.                                                                                            |
+| ExternalReferenceId | string                                                               | 조회에 대한 외부 식별자입니다. 예: 고유한 Dynamics 365 리드/기회 ID 저장                    |
 | CreatedDateTime     | UTC 날짜/시간 형식의 문자열                                       | 조회가 만들어진 날짜입니다.                                                                                   |
 | UpdatedDateTime     | UTC 날짜/시간 형식의 문자열                                       | 조회가 마지막으로 업데이트된 날짜입니다.                                                                              |
 | ExpirationDateTime  | UTC 날짜/시간 형식의 문자열                                       | 조회가 만료되는 날짜입니다.                                                                                   |
 | 상태              | [ReferralStatus](referral-resources.md#referralstatus)               | 조회 상태를 나타내는 값이 있는 [열거형](https://docs.microsoft.com/dotnet/api/system.enum)입니다.          |
 | Substatus           | [ReferralSubstatus](referral-resources.md#referralsubstatus)         | 조회 하위 상태를 나타내는 값이 있는 [열거형](https://docs.microsoft.com/dotnet/api/system.enum)입니다.      |
-| StatusReason        | 문자열                                                               | 상태에 대한 설명 메시지입니다. 예를 들어 조회가 실패한 이유를 설명합니다.                              |
+| StatusReason        | string                                                               | 상태에 대한 설명 메시지입니다. 예를 들어 조회가 실패한 이유를 설명합니다.                              |
 | ReferralType        | [ReferralType](referral-resources.md#referraltype)                   | 조회 유형을 나타냅니다.                                                                                        |
 | Qualification       | [ReferralQualification](referral-resources.md#referralqualification) | 조회 품질을 나타냅니다.                                                                              |
 | CustomerProfile     | [CustomerProfile](referral-resources.md#customerprofile)             | 고객 연락처 정보입니다.                                                                                        |
@@ -69,8 +69,8 @@ ms.locfileid: "74556773"
 | 상태 | 허용되는 상태 전환 | 허용되는 하위 상태            |
 |--------|---------------------------|------------------------------|
 | 새로 만들기    | 새, 활성, 닫힘       | 보류 중, 받음            |
-| 활성 | 활성, 닫힘            | Accepted                     |
-| 닫힘 | 닫힘                    | 성공, 실패, 거부됨, 만료됨 |
+| 활성 | 활성, 닫힘            | 수락됨                     |
+| 종결 | 종결                    | 성공, 실패, 거부됨, 만료됨 |
 
 ### <a name="request-example"></a>요청 예제
 
