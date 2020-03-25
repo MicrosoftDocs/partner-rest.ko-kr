@@ -27,6 +27,13 @@
                   href: develop/referral-connectors.md
                 - name: 조회 리소스
                   href: develop/referral-resources.md
+            - name: 가격
+              href: develop/pricing.md
+              items:
+                - name: 가격표 가져오기
+                  href: develop/get-a-price-sheet.md
+                - name: 환율 가져오기
+                  href: develop/get-foreign-exchange-rates.md
     - name: REST API 참조
       href: develop/rest-api-reference.md
       items:
