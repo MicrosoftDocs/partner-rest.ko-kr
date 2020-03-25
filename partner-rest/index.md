@@ -2,21 +2,21 @@
 layout: LandingPage
 title: Microsoft 파트너 API
 description: Microsoft 파트너를 위한 리소스 및 설명서
-ms.date: 02/26/2019
+ms.date: 02/26/2010
 ms.service: partner-dashboard
 ms.subservice: partnercenter-csp
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: bb1c37377bb4d87120cb8523ae5a2a44e965da7f
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
+ms.openlocfilehash: 0f6ad53b5fedf7f91ac053ac60cbb902014bdc3d
+ms.sourcegitcommit: 42214c7f8e122bd79adb6f4b56729bd8716b1e92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556936"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542058"
 ---
 # <a name="microsoft-partner-api-documentation-and-resources"></a>Microsoft 파트너 API 설명서 및 리소스
 
-Microsoft 파트너 API는 [Microsoft 파트너 센터 API](https://docs.microsoft.com/en-us/partner-center/develop/)의 후속 버전입니다. 이 API를 통해 파트너 센터의 기능에 프로그래밍 방식으로 액세스할 수 있습니다.
+Microsoft 파트너 API는 [Microsoft 파트너 센터 API](https://docs.microsoft.com/partner-center/develop/)의 후속 버전입니다. 이 API를 통해 파트너 센터의 기능에 프로그래밍 방식으로 액세스할 수 있습니다.
 
 <ul id="products1" class="cardsC cols cols3 panelContent">
     <li>
