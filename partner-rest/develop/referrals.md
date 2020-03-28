@@ -3,14 +3,14 @@ title: 프로그래밍 방식으로 조회 관리
 description: 이 섹션에서는 파트너가 파트너 API를 사용하여 프로그래밍 방식으로 조회를 관리하는 방법을 설명합니다.
 ms.date: 05/21/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 489371df598d6dacd547bd0ecfeedfc26aa15ae7
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
+ms.openlocfilehash: eff876506a840ccdb58b3c020d007ec9d2caad63
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556623"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342146"
 ---
 # <a name="programmatically-manage-referrals"></a>프로그래밍 방식으로 조회 관리
 

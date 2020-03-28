@@ -2,17 +2,16 @@
 layout: LandingPage
 title: Microsoft 파트너 API
 description: Microsoft 파트너를 위한 리소스 및 설명서
-ms.date: 02/26/2010
+ms.date: 03/26/2020
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.topic: landing-page
-searchScope: []
-ms.openlocfilehash: 0f6ad53b5fedf7f91ac053ac60cbb902014bdc3d
-ms.sourcegitcommit: 42214c7f8e122bd79adb6f4b56729bd8716b1e92
+ms.openlocfilehash: 8d055348c254a6128f81f5f9d19eb3596386371c
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542058"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342002"
 ---
 # <a name="microsoft-partner-api-documentation-and-resources"></a>Microsoft 파트너 API 설명서 및 리소스
 
@@ -50,7 +49,7 @@ Microsoft 파트너 API는 [Microsoft 파트너 센터 API](https://docs.microso
                         </div>
                         <div class="cardText">
                             <h3>시나리오</h3>
-                            <p>Microsoft 파트너 REST API를 통해 사용할 수 있는 프로그래밍 시나리오입니다.</p>
+                               <p>Microsoft 파트너 REST API를 통해 사용할 수 있는 프로그래밍 시나리오입니다.</p>
                         </div>
                     </div>
                 </div>
