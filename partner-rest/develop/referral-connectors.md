@@ -3,14 +3,14 @@ title: 조회 커넥터.
 description: Microsoft Flow를 사용하여 파트너 조회를 Dynamics 365 CRM 잠재 고객과 동기화합니다.
 ms.date: 07/22/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 995d0932da9cd28407babfdc54e695caac9882d5
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 0a62023feb03114bb7ba1136b7700875f24c2e01
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "76542028"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342222"
 ---
 # <a name="referral-connectors"></a>조회 커넥터
 

@@ -3,14 +3,14 @@ title: 조회 업데이트
 description: 파트너 API를 사용하여 조회를 업데이트합니다.
 ms.date: 05/17/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: cae08ddffc7fd97682a009a430b4cd1114f8e761
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 9b77028541e58006f98a25800aecf21edc93fac8
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "74556773"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342073"
 ---
 # <a name="update-a-referral"></a>조회 업데이트
 

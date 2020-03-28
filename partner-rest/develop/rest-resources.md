@@ -3,14 +3,14 @@ title: 파트너 REST 리소스
 description: 파트너 REST API를 통해 요청을 작성하고 응답의 구문을 분석하는 JSON 요소에 대한 정의입니다.
 ms.date: 05/21/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 2fbab9020d3028a7416585fd7249cab02610e5eb
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 99989e2e3ba9322697f5d834c2f0c3dc9097dd09
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "74556633"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342137"
 ---
 # <a name="partner-rest-resources"></a>파트너 REST 리소스
 
@@ -36,7 +36,7 @@ ms.locfileid: "74556633"
 * ReferralRequirements
 * SolutionTag
 * SolutionType
-* Tag
+* 태그
 * 제품
 * 서비스
 * 산업

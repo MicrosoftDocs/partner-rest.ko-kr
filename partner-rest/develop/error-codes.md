@@ -3,14 +3,14 @@ title: 파트너 API REST 오류 코드
 description: 파트너 REST API는 요청의 성공 또는 실패에 대한 상태 코드를 포함하는 JSON 개체를 반환합니다.
 ms.date: 05/21/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: b21dc7c9576c7944798a7db7c38ddd694cfe713f
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 0829f48e5028b4a19e8a6f7b89fbb41d83a50cab
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78909390"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342297"
 ---
 # <a name="partner-api-rest-error-codes"></a>파트너 API REST 오류 코드
 

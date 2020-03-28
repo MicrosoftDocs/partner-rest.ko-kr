@@ -3,14 +3,14 @@ title: 가격표 가져오기
 description: 지정 된 시장 및 보기에 대 한 가격표를 가져옵니다. 는 월별로 기록을 가져오는 필터를 지원 합니다.
 ms.date: 01/24/2020
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 002b39b08e7daee35cf8e6f1175749f6428ff252
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 4d53548141032f089d5f56c73b3ff3b776712cd0
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "76796632"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342273"
 ---
 # <a name="get-a-price-sheet"></a>가격표 가져오기
 
@@ -48,7 +48,7 @@ ms.locfileid: "76796632"
 
 | 이름                   | 형식     | 필수 | 설명                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|지역/국가                      | string   | 예       | 시장에서 요청 하는 국가의 두 문자 국가 코드       |
+|Market                      | string   | 예       | 시장에서 요청 하는 국가의 두 문자 국가 코드       |
 |PricesheetView | string   | 예       | 요청 되는 가격표의 유형입니다. azure_consumption 하거나 azure_reservations       |
 
 ### <a name="uri-filter-parameters"></a>URI 필터 매개 변수

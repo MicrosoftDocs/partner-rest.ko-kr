@@ -3,14 +3,14 @@ title: 파트너 REST API 참조
 description: 파트너 REST API는 Microsoft 파트너가 앱, 고객 계정을 관리하고 지원 요청을 처리하는 Microsoft 시스템과 통합하는 데 유용합니다.
 ms.date: 05/21/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 361f6c3f5e06c037fe9018888fadc145b2b28366
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 16d15d45cfd644f4f9a03ea6f1e67f69eec9529c
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "74556613"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342169"
 ---
 # <a name="partner-rest-api-reference"></a>파트너 REST API 참조
 

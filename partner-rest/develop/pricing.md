@@ -3,14 +3,14 @@ title: 프로그래밍 방식으로 가격 책정 검색
 description: 이 섹션에서는 파트너가 파트너 Api를 사용 하 여 Azure 계획 제품에 대 한 가격 책정 및 외부 환율을 프로그래밍 방식으로 검색 하는 방법을 설명 합니다.
 ms.date: 01/21/2020
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 27bbe792285035679d4498f3e41f6231912eaa9c
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 3e46ba679e1d3a57fce45a19460fef202603bb0c
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "76542078"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342177"
 ---
 # <a name="programmatically-retrieve-csp-pricing"></a>프로그래밍 방식으로 CSP 가격 검색
 

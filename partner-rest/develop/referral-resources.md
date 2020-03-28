@@ -3,14 +3,14 @@ title: 조회 리소스
 description: 조회 리소스는 고객, Microsoft 또는 다른 파트너의 잠재 고객을 나타냅니다.
 ms.date: 05/17/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 147afef315bf5d9a8e3b5d045259ed2c94bf6acd
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 08438d208da57a4df40aeb609b14b6b6a6128d45
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "76542048"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342184"
 ---
 # <a name="referral-resources"></a>조회 리소스
 
@@ -128,8 +128,8 @@ ms.locfileid: "76542048"
 | 속성     | 형식   | 설명                                                |
 |--------------|--------|------------------------------------------------------------|
 | AddressLine1 | string | 주소의 첫 번째 줄입니다.                             |
-| AddressLine2 | string | 주소의 두 번째 줄입니다. 이 속성은 선택 사항입니다. |
-| 구/군/시         | string | 구/군/시입니다.                                                  |
+| AddressLine2 | string | 주소의 두 번째 줄입니다. 이 속성은 선택적입니다. |
+| 구/군/시         | string | 도시입니다.                                                  |
 | 상태        | string | 상태입니다.                                                 |
 | PostalCode   | string | 우편 번호입니다.                                |
 | Country      | string | [ISO 국가 코드 형식](https://docs.microsoft.com/dotnet/api/system.globalization.regioninfo.threeletterisoregionname?view=netframework-4.7.2)의 국가/지역입니다.             |
@@ -144,7 +144,7 @@ ms.locfileid: "76542048"
 | FirstName   | string | 연락처의 이름입니다.    |
 | LastName    | string | 연락처의 성입니다.     |
 | PhoneNumber | string | 연락처의 전화 번호입니다.  |
-| 메일       | string | 연락처의 이메일 주소입니다. |
+| Email       | string | 연락처의 이메일 주소입니다. |
 | ContactPreference       | [ContactPreference](referral-resources.md#contactpreference) | 이메일 알림을 받을 연락처의 기본 설정입니다. |
 
 ## <a name="contactpreference"></a>ContactPreference
@@ -245,7 +245,7 @@ Consent는 다른 조직과 정보를 공유하고 사용자에게 연락할 수
 | BusinessProfileLocation         |  파트너 비즈니스 프로필의 프로필 위치입니다.                            |
 | SolutionProfile            |  파트너의 솔루션 프로필입니다. |
 
-## <a name="tag"></a>Tag
+## <a name="tag"></a>태그
 
 태그를 설명합니다.
 

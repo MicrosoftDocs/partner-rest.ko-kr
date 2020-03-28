@@ -3,14 +3,14 @@ title: ID로 조회 가져오기
 description: 해당 ID별 조회를 가져옵니다.
 ms.date: 05/21/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 3639a5885b13953d57fc5cc86ad1abd3dc0d3614
-ms.sourcegitcommit: 50d18c96d24755174beb4fcb694223325a7fe450
+ms.openlocfilehash: 39ee62de740f3aa73c3fe8ca86d0da47ebb96334
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "74556503"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342263"
 ---
 # <a name="get-a-referral-by-id"></a>ID로 조회 가져오기
 
