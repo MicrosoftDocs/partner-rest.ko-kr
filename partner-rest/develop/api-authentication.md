@@ -3,14 +3,14 @@ title: 파트너 API 인증
 description: 인증을 위해 Azure AD에서 파트너 API를 사용하도록 인증 설정을 구성합니다.
 ms.date: 05/17/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: cd0aca43ad243a17779fe76edd107c5156d4a040
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
+ms.openlocfilehash: c5810678dccc2be1c3c084c901299961d6ba7820
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556443"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342306"
 ---
 # <a name="partner-api-authentication"></a>파트너 API 인증
 
@@ -36,6 +36,16 @@ ms.locfileid: "74556443"
 7. **위임된 권한**을 **파트너 센터**로 설정합니다.
 
     ![Microsoft 파트너 API에 대한 위임된 권한 구성 화면 스크린샷](../images/SelectUserPermission.png)
+    
+8. *Microsoft 파트너* *(Microsoft 파트너 센터*) API(`fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd`)를 검색합니다.
+
+    ![Microsoft 파트너 센터 API를 검색하는 API 사용 권한 요청 화면 스크린샷](../images/SearchPCApi.png)
+    
+9. **Microsoft 파트너 센터**를 선택하고 **user_impersonation**을 확인합니다.
+
+10. **위임된 권한**을 **파트너 센터**로 설정합니다.
+
+    ![Microsoft 파트너 센터 API에 대한 위임된 권한 구성 화면 스크린샷](../images/SelectPCUserPermission.png)
 
 ## <a name="application-only-access"></a>애플리케이션 전용 액세스
 

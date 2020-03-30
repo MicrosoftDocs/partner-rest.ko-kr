@@ -3,14 +3,14 @@ title: 조회 만들기
 description: 파트너 API에서 독립 또는 공유 조회를 만듭니다.
 ms.date: 05/17/2019
 ms.service: partner-dashboard
-ms.subservice: partnercenter-csp
+ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 52782d55a84847bbe94fdfebc54a2a1facda93cf
-ms.sourcegitcommit: f7918b7775ca8c6192b2a3e61edb74547730672d
+ms.openlocfilehash: 6aab4b5f45030c3c16294b2929b1a6d3086fb951
+ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "74556583"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80342292"
 ---
 # <a name="create-a-referral"></a>조회 만들기
 
@@ -31,7 +31,7 @@ ms.locfileid: "74556583"
 
 ### <a name="request-syntax"></a>요청 구문
 
-| 메서드  | 요청 URI                                                  |
+| 방법  | 요청 URI                                                  |
 |---------|--------------------------------------------------------------|
 | **POST** | <https://api.partner.microsoft.com/v1.0/engagements/referrals> |
 
@@ -43,13 +43,13 @@ ms.locfileid: "74556583"
 
 다음 표에서는 새로운 참조에 대한 요청 본문의 [조회](referral-resources.md) 속성을 설명합니다.
 
-| 속성            | 형식                                                                 | 설명                                                                                                          |
+| 속성            | 유형                                                                 | 설명                                                                                                          |
 |---------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| 이름                | 문자열                                                               | 조회의 이름입니다.                                                                                            |
-| ExternalReferenceId | 문자열                                                               | 조회에 대한 외부 식별자입니다. 예를 들어, 사용자의 Dynamics 365 잠재 고객 또는 기회 ID입니다.                   |
+| 이름                | string                                                               | 조회의 이름입니다.                                                                                            |
+| ExternalReferenceId | string                                                               | 조회에 대한 외부 식별자입니다. 예를 들어, 사용자의 Dynamics 365 잠재 고객 또는 기회 ID입니다.                   |
 | 상태              | [ReferralStatus](referral-resources.md#referralstatus)               | 조회 상태를 나타내는 값이 있는 [열거형](https://docs.microsoft.com/dotnet/api/system.enum)입니다.          |
 | Substatus           | [ReferralSubstatus](referral-resources.md#referralsubstatus)         | 조회 하위 상태를 나타내는 값이 있는 [열거형](https://docs.microsoft.com/dotnet/api/system.enum)입니다.       |
-| StatusReason        | 문자열                                                               | 상태에 대한 설명 메시지입니다. 예를 들어 조회가 실패한 이유를 설명합니다.                            |
+| StatusReason        | string                                                               | 상태에 대한 설명 메시지입니다. 예를 들어 조회가 실패한 이유를 설명합니다.                            |
 | ReferralType        | [ReferralType](referral-resources.md#referraltype)                   | 조회 유형을 나타냅니다. **필수 사항입니다.**                                                                                        |
 | Qualification       | [ReferralQualification](referral-resources.md#referralqualification) | 조회 품질을 나타냅니다.                                                                              |
 | CustomerProfile     | [CustomerProfile](referral-resources.md#customerprofile)             | 고객 연락처 정보입니다.  **필수 사항입니다.**                                                                                      |
@@ -65,7 +65,7 @@ ms.locfileid: "74556583"
 |--------|---------------------------|------------------------------|
 | 새로 만들기    | 새, 활성, 닫힘       | 보류 중, 받음            |
 | 활성 | 활성, 닫힘            | Accepted                     |
-| 닫힘 | 닫힘                    | 성공, 실패, 거부됨, 만료됨 |
+| 종결 | 종결                    | 성공, 실패, 거부됨, 만료됨 |
 
 ### <a name="request-example"></a>요청 예제
 
