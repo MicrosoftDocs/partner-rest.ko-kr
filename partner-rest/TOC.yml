@@ -1,5 +1,5 @@
 - name: 파트너 개발자 설명서
-  href: index.md
+  href: index.yml
   items:
     - name: 개요 및 시나리오
       href: develop/index.md
