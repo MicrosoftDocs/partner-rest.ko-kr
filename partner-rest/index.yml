@@ -1,0 +1,37 @@
+### YamlMime:Landing
+title: Microsoft 파트너 REST API
+summary: Microsoft 파트너 REST API는 Microsoft 파트너 센터 API의 후속 버전입니다. 이 API를 통해 파트너 센터의 기능에 프로그래밍 방식으로 액세스할 수 있습니다.
+metadata:
+  title: 파트너 센터 개발자 설명서
+  description: Microsoft 파트너 REST API는 Microsoft 파트너 센터 API의 후속 버전입니다. 이 API를 통해 파트너 센터의 기능에 프로그래밍 방식으로 액세스할 수 있습니다.
+  ms.service: partner-dashboard
+  ms.subservice: partnercenter-sdk
+  ms.topic: landing-page
+  author: jasonwhowell
+  ms.author: jasonh
+  ms.date: 04/09/2020
+  ms.openlocfilehash: 163c778485f25318e1263a2064ded44fe617f8af
+  ms.sourcegitcommit: 3c165938f544ff226cbe11ca21ed5aa00448d9b4
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 04/10/2020
+  ms.locfileid: "81112592"
+landingContent:
+- title: Microsoft 파트너 API 설명서 및 리소스
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 파트너 REST API 시작
+      url: develop/get-started.md
+    - text: 파트너 REST API에서 지원하는 시나리오
+      url: develop/scenarios.md
+  - linkListType: reference
+    links:
+    - text: 파트너 REST API
+      url: develop/rest-api-reference.md
+  - linkListType: how-to-guide
+    links:
+    - text: 프로그래밍 방식으로 조회 관리
+      url: develop/referrals.md
+    - text: 프로그래밍 방식으로 CSP 가격 검색
+      url: develop/pricing.md
