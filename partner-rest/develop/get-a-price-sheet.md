@@ -5,12 +5,12 @@ ms.date: 01/24/2020
 ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: 4d53548141032f089d5f56c73b3ff3b776712cd0
-ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
+ms.openlocfilehash: d6f1fbd39e7bdb30bdaef19cbf632cc87a2ea4ff
+ms.sourcegitcommit: dbb0a0d2b928eaacbae0795166b3e51547fb0bf6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80342273"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82223316"
 ---
 # <a name="get-a-price-sheet"></a>가격표 가져오기
 
@@ -20,7 +20,7 @@ ms.locfileid: "80342273"
 
 이 항목에서는 지정 된 시장 및 보기에 대 한 가격표를 가져오는 방법에 대해 설명 합니다. 이 메서드는 월별 기록을 가져오는 필터를 지원 합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
 
 - 자격 증명은 [파트너 API 인증](api-authentication.md)에 설명되어 있습니다. 이 시나리오에서는 응용 프로그램 사용자 인증만 지원 합니다. 응용 프로그램-모드은 아직 지원 되지 않습니다.
 
@@ -33,12 +33,13 @@ ms.locfileid: "80342273"
 - 예약 측정기 가격은 CSP 파트너 할인을 포함 합니다. 예약에 대 한 예상 소매 가격은 파트너 센터 "가격 책정 및 제품" 페이지에서 다운로드할 수 있는 예약 공유 서비스에서 찾을 수 있습니다.
 - Azure 계획 가격 책정에 대 한 자세한 내용은 [azure 계획 가격 책정 설명서](https://docs.microsoft.com/partner-center/azure-plan-price-list)에서 찾을 수 있습니다.
 - 파트너 가격 책정 및 외부 환율 Api는 [파트너 센터 SDK](https://docs.microsoft.com/partner-center/develop/get-started)의 일부가 아닙니다.
+- 이 메서드는 가격 목록을 파일 스트림으로 반환 합니다. 파일 스트림은 .csv 파일 이거나 .csv의 zip 압축 된 버전입니다. 압축 된 파일을 요청 하는 방법에 대 한 자세한 내용은 아래에 포함 되어 있습니다.
 
 ## <a name="rest-request"></a>REST 요청
 
 ### <a name="request-syntax"></a>요청 구문
 
-| 메서드   | 요청 URI                                                                                                 |
+| 방법   | 요청 URI                                                                                                 |
 |----------|-------------------------------------------------------------------------------------------------------------|
 | **GET** | https://api.partner.microsoft.com/v1.0/sales/pricesheets(Market=' {market} ', PricesheetView = ' {view} ')/$value                                     |
 
@@ -46,36 +47,43 @@ ms.locfileid: "80342273"
 
 다음 경로 매개 변수를 사용 하 여 원하는 가격 책정 시트의 시장 및 유형을 요청 합니다.
 
-| 이름                   | 형식     | 필수 | 설명                                                     |
+| 속성                   | 유형     | 필수 | Description                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|Market                      | string   | 예       | 시장에서 요청 하는 국가의 두 문자 국가 코드       |
+|시장                      | string   | 예       | 시장에서 요청 하는 국가의 두 문자 국가 코드       |
 |PricesheetView | string   | 예       | 요청 되는 가격표의 유형입니다. azure_consumption 하거나 azure_reservations       |
 
 ### <a name="uri-filter-parameters"></a>URI 필터 매개 변수
 
 다음 필터 매개 변수를 사용 합니다.
 
-| 이름                   | 형식     | 필수 | 설명                                                     |
+| 속성                   | 유형     | 필수 | Description                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
 |타임라인| string   | 아니요| 전달 되지 않은 경우 기본값은 current입니다. 가능한 값은 기록, 현재 및 미래입니다.       |
 |월| string   | 아니요| 기록이 요청 된 경우에만 필요 합니다. 요청 되는 가격표에 대해 YYYYMM을 준수 해야 합니다.       |
 
-### <a name="request-headers"></a>요청 헤더입니다.
+### <a name="request-headers"></a>요청 헤더
 
 - 자세한 내용은 [파트너 REST 헤더](headers.md)를 참조하세요.
+
+위의 헤더 외에도 가격 파일은 압축 된 대역폭과 다운로드 시간으로 검색할 수 있습니다. 기본적으로 파일은 압축 되지 않습니다. 압축 된 버전의 파일을 가져오려면 아래 헤더 값을 포함 하면 됩니다. 압축 된 시트는 4 월 2020 일에만 사용할 수 있으며 4 월 2020 일 전의 모든 시트는 압축 되지 않음 으로만 사용할 수 있습니다.
+
+| 헤더                   | 값 형식     | 값 | Description                                                     |
+|------------------------|----------|----------|-----------------------------------------------------------------|
+|Accept-Encoding| string   | deflate| 선택 사항입니다. 생략 된 파일 스트림이 압축 되지 않은 경우       |
 
 ### <a name="request-example"></a>요청 예제
 
 ```http
 GET https://api.partner.microsoft.com/v1.0/sales/pricesheets(Market='ad',PricesheetView='azure_consumption')/$value?timeline=history&month=201909 HTTP/1.1
-Authorization: Bearer 
+Authorization: Bearer
+Accept-Encoding: deflate
 Host: api.partner.microsoft.com
 
 ```
 
 ## <a name="rest-response"></a>REST 응답
 
-성공 하면이 메서드는 가격 목록을 파일 스트림으로 반환 합니다.
+성공 하면이 메서드는 가격 목록을 파일 스트림으로 반환 합니다. 파일 스트림은 .csv 파일 이거나 .csv의 zip 압축 된 버전입니다.
 
 ### <a name="response-success-and-error-codes"></a>응답 성공 및 오류 코드
 
