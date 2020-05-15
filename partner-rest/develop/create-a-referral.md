@@ -6,10 +6,10 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
 ms.openlocfilehash: 6aab4b5f45030c3c16294b2929b1a6d3086fb951
-ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
+ms.sourcegitcommit: 3c165938f544ff226cbe11ca21ed5aa00448d9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2020
+ms.lasthandoff: 04/23/2020
 ms.locfileid: "80342292"
 ---
 # <a name="create-a-referral"></a>조회 만들기

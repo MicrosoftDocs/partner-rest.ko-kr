@@ -6,10 +6,10 @@ ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
 ms.openlocfilehash: c5810678dccc2be1c3c084c901299961d6ba7820
-ms.sourcegitcommit: 0508b7302a3965fd5537b05c1f0397a1da014257
+ms.sourcegitcommit: 3c165938f544ff226cbe11ca21ed5aa00448d9b4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2020
+ms.lasthandoff: 04/23/2020
 ms.locfileid: "80342306"
 ---
 # <a name="partner-api-authentication"></a>파트너 API 인증
