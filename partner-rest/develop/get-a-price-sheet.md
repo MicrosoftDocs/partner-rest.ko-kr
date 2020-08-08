@@ -5,12 +5,12 @@ ms.date: 01/24/2020
 ms.service: partner-dashboard
 ms.subservice: partnercenter-sdk
 ms.localizationpriority: medium
-ms.openlocfilehash: d6f1fbd39e7bdb30bdaef19cbf632cc87a2ea4ff
-ms.sourcegitcommit: dbb0a0d2b928eaacbae0795166b3e51547fb0bf6
+ms.openlocfilehash: 5195ebed6559bd71a7832a667e63ee801be1c82f
+ms.sourcegitcommit: bb3f5f7ee0489bded86fe52e55018c1f4f5032e2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82223316"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "88001660"
 ---
 # <a name="get-a-price-sheet"></a>가격표 가져오기
 
@@ -20,9 +20,10 @@ ms.locfileid: "82223316"
 
 이 항목에서는 지정 된 시장 및 보기에 대 한 가격표를 가져오는 방법에 대해 설명 합니다. 이 메서드는 월별 기록을 가져오는 필터를 지원 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 - 자격 증명은 [파트너 API 인증](api-authentication.md)에 설명되어 있습니다. 이 시나리오에서는 응용 프로그램 사용자 인증만 지원 합니다. 응용 프로그램-모드은 아직 지원 되지 않습니다.
+- 이 API는 현재 파트너가 전역 관리자, 관리 에이전트 또는 판매 에이전트 역할 중 하나 여야 하는 사용자 액세스만 지원 합니다.
 
 ## <a name="details"></a>세부 정보
 
@@ -47,19 +48,19 @@ ms.locfileid: "82223316"
 
 다음 경로 매개 변수를 사용 하 여 원하는 가격 책정 시트의 시장 및 유형을 요청 합니다.
 
-| 속성                   | 유형     | 필수 | Description                                                     |
+| Name                   | Type     | 필수 | 설명                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|시장                      | string   | 예       | 시장에서 요청 하는 국가의 두 문자 국가 코드       |
-|PricesheetView | string   | 예       | 요청 되는 가격표의 유형입니다. azure_consumption 하거나 azure_reservations       |
+|시장                      | 문자열   | 예       | 시장에서 요청 하는 국가의 두 문자 국가 코드       |
+|PricesheetView | 문자열   | 예       | 요청 되는 가격표의 유형입니다. azure_consumption 하거나 azure_reservations       |
 
 ### <a name="uri-filter-parameters"></a>URI 필터 매개 변수
 
 다음 필터 매개 변수를 사용 합니다.
 
-| 속성                   | 유형     | 필수 | Description                                                     |
+| Name                   | Type     | 필수 | 설명                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|타임라인| string   | 아니요| 전달 되지 않은 경우 기본값은 current입니다. 가능한 값은 기록, 현재 및 미래입니다.       |
-|월| string   | 아니요| 기록이 요청 된 경우에만 필요 합니다. 요청 되는 가격표에 대해 YYYYMM을 준수 해야 합니다.       |
+|타임라인| 문자열   | No| 전달 되지 않은 경우 기본값은 current입니다. 가능한 값은 기록, 현재 및 미래입니다.       |
+|월| 문자열   | No| 기록이 요청 된 경우에만 필요 합니다. 요청 되는 가격표에 대해 YYYYMM을 준수 해야 합니다.       |
 
 ### <a name="request-headers"></a>요청 헤더
 
@@ -67,9 +68,9 @@ ms.locfileid: "82223316"
 
 위의 헤더 외에도 가격 파일은 압축 된 대역폭과 다운로드 시간으로 검색할 수 있습니다. 기본적으로 파일은 압축 되지 않습니다. 압축 된 버전의 파일을 가져오려면 아래 헤더 값을 포함 하면 됩니다. 압축 된 시트는 4 월 2020 일에만 사용할 수 있으며 4 월 2020 일 전의 모든 시트는 압축 되지 않음 으로만 사용할 수 있습니다.
 
-| 헤더                   | 값 형식     | 값 | Description                                                     |
+| header                   | 값 형식     | 값 | 설명                                                     |
 |------------------------|----------|----------|-----------------------------------------------------------------|
-|Accept-Encoding| string   | deflate| 선택 사항입니다. 생략 된 파일 스트림이 압축 되지 않은 경우       |
+|Accept-Encoding| 문자열   | deflate| 선택 사항입니다. 생략 된 파일 스트림이 압축 되지 않은 경우       |
 
 ### <a name="request-example"></a>요청 예제
 
